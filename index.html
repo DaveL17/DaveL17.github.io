@@ -4,6 +4,14 @@
     <link rel="stylesheet" type="text/css" href="fogbert.css">
     <meta charset="UTF-8">
     <title>Dave's Plugins for the Indigo Home Control Server</title>
+
+    <!-- The following script auto-sizes the height of the iframe to the height of the content being displayed -->
+    <script type="text/javascript">
+        function resize_iframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
 </head>
 
 <body>
@@ -46,6 +54,9 @@
             The BikeShare plugin allows users to create Indigo Home Control Server devices representing Bike sharing service locations. Only select bike sharing services are supported,
             please see the plugin for more information.
         </p>
+        <p>
+            <i>The BikeShare Plugin is compatible with Indigo 6 and above.</i>
+        </p>
         <hr>
     </li>
     <li>
@@ -56,6 +67,9 @@
         <p>
             The GhostXML plugin allows XML and JSON data sources (either local or on the internet) to be represented as Indigo devices. Each XML or JSON node is saved as a custom device
             state.
+        </p>
+        <p>
+            <i>The GhostXML Plugin is compatible with Indigo 6 and above.</i>
         </p>
         <hr>
     </li>
@@ -68,6 +82,9 @@
             The Matplotlib plugin allows users to easily create attractive charts for display on Indigo Home Control Server control pages. The plugin also includes a facility to create
             necessary CSV data for display.
         </p>
+        <p>
+            <i>The Matplotlib Plugin is compatible with Indigo 7 and above.</i>
+        </p>
         <hr>
     </li>
     <li>
@@ -79,6 +96,10 @@
             The OWServer plugin allows users to connect the
             <a href="https://www.embeddeddatasystems.com/OW-SERVER-1-Wire-to-Ethernet-Server-Revision-2_p_152.html">Embedded Data Systems (EDS) 1-Wire Server</a>
             to the Indigo Home Control Server. The user creates devices that represent individual 1-Wire devices.
+
+        </p>
+        <p>
+            <i>The OWServer Plugin is compatible with Indigo 6 and above.</i>
         </p>
         <hr>
     </li>
@@ -91,6 +112,9 @@
             The Thingspeak Plugin for the Indigo Home Control Server provides a facility to upload Indigo data elements to Thingspeak. It supports both remote and locally-hosted
             Thingspeak servers.
         </p>
+        <p>
+            <i>The Thingspeak Plugin is compatible with Indigo 6 and above.</i>
+        </p>
         <hr>
     </li>
     <li>
@@ -102,6 +126,9 @@
             The WUnderground plugin allows users to create Indigo Home Control Server devices that provide a facility to create individual weather devices that will be linked to Weather
             Underground.
         </p>
+        <p>
+            <i>The WUnderground Plugin is compatible with Indigo 6 and above.</i>
+        </p>
         <hr>
     </li>
     <li>
@@ -112,6 +139,9 @@
         <p>
             The WUnderstation Plugin for the Indigo Home Control Server (Indigo) is used to provide a bridge between Indigo and the Weather Underground Personal Weather Station network
             data system.
+        </p>
+        <p>
+            <i>The WUnderstation Plugin is compatible with Indigo 6 and above.</i>
         </p>
     </li>
 </ul>
@@ -264,8 +294,8 @@
     </li>
 </ul>
 
-<object name="features_and_bugs" type="text/html" data="features_and_bugs.html" style="width: 100%; height: 300px;"></object>
-<object name="license" type="text/html" data="license.html" style="width: 100%; height: 300px;"></object>
+<iframe src="features_and_bugs.html" frameborder="0" scrolling="no" width="100%" onload="resize_iframe(this);"></iframe>
+<iframe src="license.html" frameborder="0" scrolling="no" width="100%" onload="resize_iframe(this);"></iframe>
 
 </body>
 </html>
