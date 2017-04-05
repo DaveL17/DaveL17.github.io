@@ -30,6 +30,13 @@ figure{
 footer {
     display: block;
 }
+header{
+    background-image: url("/img/img_banner.png");
+    color: #FFFFFF;
+    display: block;
+    margin: 0px;
+    width: 100%;
+}
 h1 {
     background: #330099;
     border: 1px solid #777777;
