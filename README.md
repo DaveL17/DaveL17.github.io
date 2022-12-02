@@ -13,10 +13,3 @@
 | [wunderground7](https://github.com/DaveL17/wunderground7)         | ![wunderground7](https://img.shields.io/github/downloads/DaveL17/wunderground7/latest/total.svg)         | ![x](https://img.shields.io/github/release/DaveL17/wunderground7.svg)     | ![indigo-version](https://img.shields.io/badge/Indigo-7.0+-blueviolet.svg)    | ![python-version](https://img.shields.io/badge/Python-2.7-darkgreen.svg)  | ![plugin-status](https://img.shields.io/badge/Status-Deprecated-red.svg)             |
 | [wunderstation](https://github.com/DaveL17/wunderstation)         | ![wunderstation](https://img.shields.io/github/downloads/DaveL17/wunderstation/latest/total.svg)         | ![x](https://img.shields.io/github/release/DaveL17/wunderstation.svg)     | ![indigo-version](https://img.shields.io/badge/Indigo-7.0+-blueviolet.svg)    | ![python-version](https://img.shields.io/badge/Python-2.7-darkgreen.svg)  | ![plugin-status](https://img.shields.io/badge/Status-Deprecated-red.svg)             |
 | [zwave node matrix  ](https://github.com/DaveL17/ZWaveNodeMatrix) | ![zwavenodematrix](https://img.shields.io/github/downloads/DaveL17/zwavenodematrix/latest/total.svg)     | ![x](https://img.shields.io/github/release/DaveL17/zwavenodematrix.svg)   | ![indigo-version](https://img.shields.io/badge/Indigo-2022.1+-blueviolet.svg) | ![python-version](https://img.shields.io/badge/Python-3.10-darkgreen.svg) | ![plugin-status](https://img.shields.io/badge/Status-Healthy-darkgreen.svg)          |
-
-
-# A
-## B
-### C
-
-[TOC]
