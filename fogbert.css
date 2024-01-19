@@ -1,167 +1,46 @@
+html,
 body {
-    background-color: #000000;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 32px;
+  /*background-color: #0A0A0A;*/
+  color: #000000;
+}
+.accordion-body{
+    font-size: 10pt;
+}
+.accordion-button:not(.collapsed) {
+    color: #FFFFFF;
+    background-color: rgb(190, 200, 236);
+}
+.banner{
     text-align: left;
+    font-size: 32pt;
 }
-caption{
-    color: #FFFFFF;
-    font-size: 14px;
-    text-align: center;
-}
-code {
-    background-color: #777777;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    padding: 2px 10px;
-}
-div {
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-}
-figure{
-    color: yellow;
-    font-size: 14px;
-    text-align: center;
-}
-footer {
-    display: block;
-}
-header{
-    /*background-image: url("/img/img_banner.png");*/
-    color: #FFFFFF;
-    display: block;
-    margin: 0px;
-    width: 100%;
-}
-h1 {
-    background: #330099;
-    border: 1px solid #777777;
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 5px;
-    text-align: left;
-}
-h2 {
-    background: #330099;
-    border: 1px solid #777777;
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 5px;
-    text-align: left;
-}
-h3 {
-    background-color: #330099;
-    border: 1px solid #777777;
-    clear: both;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 5px;
-    text-align: left;
-}
-li span{
-    color: #FFFFFF;
-    background-color: #330099;
-    padding: 2px 10px;
-}
-ol {
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-}
-p {
-    color: #FFFFFF;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 5px;
-    text-align: left;
-}
-table, th, td {
-    border: 1px solid #000000;
-    font-size: 14px;
-}
-table {
-    background-color: gray;
-    border-collapse: collapse;
-}
-td {
-    color: #000000;
-}
-th {
-    background-color: #330099;
-    color: #FFFFFF;
-}
-th, td {
-    padding: 5px;
-    text-align: center;
-}
-ul {
-    color: #FFFFFF;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-}
-
-/*Classes*/
-.cautionText{
-    color: yellow;
-}
-.offlineText{
-    color: gray;
-}
-.onlineText{
-    color: green;
-}
-.TextWrap {
-    float: right;
-    margin: 10px;
-}
-.TextWrapLeft {
+.bi{
     float: left;
-    margin: 10px;
+    font-size: 32pt;
 }
-.underConstruction {
-    background-color: yellow;
-    color: #000000;
-    padding: 2px 10px;
+.card-header{
+    background-color: rgb(190, 200, 236);
 }
-.warningText{
-    color: red;
+.card-text{
+     font-size: 11pt;
+}
+.modal-content{
+    background-color: #000000;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
 }
 
-/*Attempts to adjust for screen sizes*/
-@media (min-width: 858px) {
-    html {
-        font-size: 12px;
-    }
+/*@media (min-width: 601px) and (max-width: 768px) {*/
+@media (max-width: 1100px){
+  .banner {
+    background-color: #000000;
+  }
 }
-@media (min-width: 780px) {
-    html {
-        font-size: 11px;
-    }
-}
-@media (min-width: 702px) {
-    html {
-        font-size: 10px;
-    }
-}
-@media (min-width: 724px) {
-    html {
-        font-size: 9px;
-    }
-}
-@media (max-width: 623px) {
-    html {
-        font-size: 8px;
-    }
+@media (min-width: 1100px) {
+  .banner {
+      background-color: #000000;
+      background-image: url('./img/img_pankaj-patel-_SgRNwAVNKw-unsplash.jpg');
+  }
 }
