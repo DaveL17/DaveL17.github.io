@@ -1,6 +1,5 @@
 html,
 body {
-  /*background-color: #0A0A0A;*/
   color: #000000;
 }
 .accordion-body{
@@ -11,8 +10,10 @@ body {
     background-color: rgb(190, 200, 236);
 }
 .banner{
-    text-align: left;
+    background-color: #000000;
     font-size: 32pt;
+    text-align: left;
+
 }
 .bi{
     float: left;
@@ -32,15 +33,8 @@ body {
     justify-content: center;
 }
 
-/*@media (min-width: 601px) and (max-width: 768px) {*/
-@media (max-width: 1100px){
-  .banner {
-    background-color: #000000;
-  }
-}
 @media (min-width: 1100px) {
   .banner {
-      background-color: #000000;
       background-image: url('./img/img_pankaj-patel-_SgRNwAVNKw-unsplash.jpg');
   }
 }
