@@ -11,26 +11,41 @@
   <link rel="stylesheet" type="text/css" href="fogbert.css">
   <title>Plugins and Scripts for Indigo</title>
   <script>
-      window.onload = function(){
+      window.onload = function () {
           const year = new Date().getFullYear()
           document.getElementById('foo').innerHTML = year.toString();
       };
   </script>
 </head>
 <header class="banner">
-    <p class="p-5 pb-2 mb-4 text-light" style=" text-align: end;">Dave's Plugins and Scripts for Indigo</p>
+  <p class="p-5 pb-2 mb-4 text-light" style=" text-align: end;">Dave's Plugins and Scripts for Indigo</p>
 </header>
 
-<body>
-<section id="indigo_stuff">
-  <div class="sticky-top m-2 p-3 h4 pb-2 mb-4 text-primary border-bottom border-info bg-light">Indigo Stuff</div>
-    <p class="m-4">Before much of this stuff is useful to you, you'll need <a href="https://indigodomo.com">Indigo.</a></p>
+<body data-bs-theme="dark">
+  <section id="indigo_stuff">
+  <div class="sticky-div sticky-top m-2 p-3 h4 pb-2 mb-4 border-bottom">
+    <table>
+      <tr>
+        <td class="fs-4" style="width: 95%;">Indigo Stuff</td>
+        <td class="fs-6">dark&nbsp;&nbsp;</td>
+        <td>
+          <div class="form-check form-switch fs-6">
+            <input class="form-check-input" type="checkbox" role="switch" id="theme-toggle">
+            <label class="form-check-label" for="theme-toggle"></label>
+          </div>
+        </td>
+        <td class="fs-6">light</td>
+      </tr>
+    </table>
+  </div>
+  <p class="m-4">Before much of this stuff is useful to you, you'll need <a href="https://indigodomo.com">Indigo.</a>
+  </p>
   <div class="container text-center">
-    <div class="row g-4">
+    <div class="row g-2">
       <!--Indigo-->
       <div class="col-12 col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-3 ms-0">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Indigo</div>
+          <div class="card-header">Indigo</div>
           <div class="card-body">
             <p class="card-text">
               Indigo is the preeminent Mac-based Smart Home Hub. It works natively with Insteon, X10 and Z-Wave and is
@@ -49,7 +64,7 @@
       <!--Dave's Plugins-->
       <div class="col-12 col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-3 ms-0">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Dave's Plugins (Forum)</div>
+          <div class="card-header">Dave's Plugins (Forum)</div>
           <div class="card-body">
             <p class="card-text">
               A moderated Indigo Domotics User Forum which is the primary place to post questions, comments, and
@@ -68,19 +83,20 @@
 </section>
 
 <section id="plugins_for_indigo">
-  <div class="sticky-top m-2 p-3 h4 pb-2 mb-4 text-primary border-bottom border-info bg-light">Plugins for Indigo</div>
+  <div class="sticky-div sticky-top m-2 p-3 h4 pb-2 mb-4 fs-4 border-bottom">Plugins for Indigo</div>
   <p class="m-4">
-    These are the plugins I've written for Indigo. Some of them are no longer supported. You can still use unsupported
-    plugins--provided their services are still available to you. For example, the Weather Underground service no longer
-    provides a general purpose API--rendering the plugin useless unless you have a paid license.
+    These are the plugins I've written for Indigo. Some of them are no longer supported for various reasons. You can
+    still use unsupported plugins&mdash;provided their services are still available to you. For example, the Weather
+    Underground service no longer provides a general purpose API&mdash;rendering the plugin useless unless you have a paid
+    license.
   </p>
 
   <div class="container text-center">
-    <div class="row g-4">
+    <div class="row g-2">
       <!--Announcements-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Announcements</div>
+          <div class="card-header">Announcements</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_announcements_icon.png" alt="announcements logo" style="width: 100%; height: 100%;"/>
@@ -91,7 +107,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.1 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10+</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.1+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=248" class="btn btn-outline-secondary btn-sm btn-sm">Forum</a>
@@ -103,9 +120,9 @@
       </div>
 
       <!--BikeShare-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">BikeShare</div>
+          <div class="card-header">BikeShare</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_bikeshare_icon.png" alt="BikeShare logo" style="width: 100%; height: 100%;"/>
@@ -117,7 +134,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.2 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.2+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=158" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -129,9 +147,9 @@
       </div>
 
       <!--Fantastic Weather-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Fantastic Weather</div>
+          <div class="card-header">Fantastic Weather</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_darksky_icon.png" alt="dark sky logo" style="width: 100%; height: 100%;"/>
@@ -142,7 +160,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-danger">Python 3.10 | No longer supported.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">No longer supported</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=285" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -154,9 +173,9 @@
       </div>
 
       <!--GhostXML-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">GhostXML</div>
+          <div class="card-header">GhostXML</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_ghostxml_icon.png" alt="ghostxml logo" style="width: 100%; height: 100%;"/>
@@ -167,7 +186,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.2 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.2+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=285" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -179,9 +199,9 @@
       </div>
 
       <!--Matplotlib-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Matplotlib</div>
+          <div class="card-header">Matplotlib</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_matplotlib_icon.png" alt="matplotlib logo" style="width: 100%; height: 100%;"/>
@@ -193,7 +213,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.1 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.1+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=219" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -205,9 +226,9 @@
       </div>
 
       <!--Multitool-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Multitool</div>
+          <div class="card-header">Multitool</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_multitool_icon.png" alt="multitool logo" style="width: 100%; height: 100%;"/>
@@ -219,7 +240,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.2 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.2+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=267" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -231,9 +253,9 @@
       </div>
 
       <!--OWServer-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">OWServer</div>
+          <div class="card-header">OWServer</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_eds_icon.png" alt="eds logo" style="width: 100%; height: 100%;"/>
@@ -247,7 +269,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.1 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.1+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=150" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -259,9 +282,9 @@
       </div>
 
       <!--Thingspeak-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Thingspeak</div>
+          <div class="card-header">Thingspeak</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_thingspeak_icon.png" alt="matplotlib logo" style="width: 100%; height: 100%;"/>
@@ -272,7 +295,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-danger">Python 2.7 | No longer supported.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">No longer supported</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=149" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -284,9 +308,9 @@
       </div>
 
       <!--WUnderground-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">WUnderground</div>
+          <div class="card-header">WUnderground</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_wunderground_icon.png" alt="wunderground logo" style="width: 100%; height: 100%;"/>
@@ -297,7 +321,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-danger">Python 2.6 | No longer supported.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.6</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">No longer supported</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=149" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -309,9 +334,9 @@
       </div>
 
       <!--WUnderground7-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">WUnderground7</div>
+          <div class="card-header">WUnderground7</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_wunderground_icon.png" alt="wunderground logo" style="width: 100%; height: 100%;"/>
@@ -325,7 +350,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-danger">Python 2.7 | No longer supported.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">No longer supported</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=149" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -337,9 +363,9 @@
       </div>
 
       <!--WUnderstation-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">WUnderstation</div>
+          <div class="card-header">WUnderstation</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_wunderground_icon.png" alt="matplotlib logo" style="width: 100%; height: 100%;"/>
@@ -350,7 +376,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-danger">Python 2.7 | No longer supported.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">No longer supported</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=175" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -362,9 +389,9 @@
       </div>
 
       <!--ZWave Node Matrix-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">ZWave Node Matrix</div>
+          <div class="card-header">ZWave Node Matrix</div>
           <div class="card-body">
             <div class="ms-0 me-3" style="width: 64px; height: 64px; float: left;">
               <img src="img/img_nodematrix_icon.png" alt="nodematrix logo" style="width: 100%; height: 100%;"/>
@@ -376,7 +403,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Works with Indigo 2022.2 and above.</i>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 3.10</span>
+              <span class="badge text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-1">Indigo 2022.2+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewforum.php?f=262" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -391,17 +419,17 @@
 </section>
 
 <section id="scripts_for_indigo">
-  <div class="sticky-top m-2 p-3 h4 pb-2 mb-4 text-primary border-bottom border-info bg-light">Scripts for Indigo</div>
+  <div class="sticky-div sticky-top m-2 p-3 h4 pb-2 mb-4 fs-4 border-bottom">Scripts for Indigo</div>
   <p class="m-4">
     Sometimes, something simpler will do...
   </p>
 
   <div class="container text-center">
-    <div class="row g-4">
+    <div class="row g-2">
       <!--Animated GIF-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Animated GIFs</div>
+          <div class="card-header">Animated GIFs</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -410,8 +438,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
-              <span class="badge text-bg-danger">Requires ImageMagick</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">Requires ImageMagick</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=16945" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -425,9 +453,9 @@
       </div>
 
       <!--Calendar Image-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Calendar Image</div>
+          <div class="card-header">Calendar Image</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -436,7 +464,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=16441" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -450,9 +478,9 @@
       </div>
 
       <!--Flat File Length Management-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Flat File Length</div>
+          <div class="card-header">Flat File Length</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -461,7 +489,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=14430" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -473,9 +501,9 @@
       </div>
 
       <!--Gnuplot-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Gnuplot</div>
+          <div class="card-header">Gnuplot</div>
           <div class="card-body">
             <i class="bi bi-file-earmark-bar-graph m-1"></i>
             <p class="card-text">
@@ -485,8 +513,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
-              <span class="badge text-bg-danger">Requires Gnuplot</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">Requires Gnuplot</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=14067" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -500,9 +528,9 @@
       </div>
 
       <!--Battery Charting-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Low Battery Chart</div>
+          <div class="card-header">Low Battery Chart</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -512,7 +540,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=15904" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -526,9 +554,9 @@
       </div>
 
       <!--Low Battery Notification-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Low Battery Notify</div>
+          <div class="card-header">Low Battery Notify</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -537,7 +565,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=14848" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -549,9 +577,9 @@
       </div>
 
       <!--Network Mesh-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Network Mesh</div>
+          <div class="card-header">Network Mesh</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -561,8 +589,8 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
-              <span class="badge text-bg-danger">Requires Gephi</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
+              <span class="badge text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-1">Requires Gephi</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=17944" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -576,9 +604,9 @@
       </div>
 
       <!--Target Humidity-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Target Humidity</div>
+          <div class="card-header">Target Humidity</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -588,7 +616,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.7+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.7+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=14072" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -600,9 +628,9 @@
       </div>
 
       <!--Unifi Backup-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Unifi Backup</div>
+          <div class="card-header">Unifi Backup</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -611,7 +639,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-info">shell script</span>
+              <span class="badge text-info-emphasis bg-info-subtle border border-info-subtle rounded-1">shell script</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=14072" class="btn btn-outline-secondary btn-sm disabled">Forum</a>
@@ -623,9 +651,9 @@
       </div>
 
       <!--Wind Direction-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Wind Direction</div>
+          <div class="card-header">Wind Direction</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -635,7 +663,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge text-bg-primary">Python 2.6+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.6+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=16049" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -649,9 +677,9 @@
       </div>
 
       <!--WUnderground Gauge Pack-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">WUnderground Gauges</div>
+          <div class="card-header">WUnderground Gauges</div>
           <div class="card-body">
             <i class="bi bi-file-earmark-image m-1"></i>
             <p class="card-text">
@@ -661,7 +689,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <i class="text-success">Does not require Python.</i>
+              <span class="badge text-light-emphasis bg-light-subtle border border-light-subtle rounded-1">Does not require Python.</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=149&t=13770" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -675,9 +703,9 @@
       </div>
 
       <!--Z-Wave Node Matrix-->
-      <div class="col col-lg-3 col-md-4 col-sm-12">
+      <div class="col col-lg-3 col-md-4 col-sm-6">
         <div class="card h-100 border-1">
-          <div class="card-header text-light">Z-Wave Node Matrix</div>
+          <div class="card-header">Z-Wave Node Matrix</div>
           <div class="card-body">
             <i class="bi bi-filetype-py m-1"></i>
             <p class="card-text">
@@ -687,7 +715,7 @@
           </div>
           <div class="card-footer" style="position:relative;">
             <h6 class="card-subtitle mb-2" style="font-size: 11pt;">
-              <span class="badge bg-primary-subtle border-primary-subtle rounded-2">Python 2.6+</span>
+              <span class="badge text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-1">Python 2.6+</span>
             </h6>
             <div class="btn-group" role="group">
               <a href="https://forums.indigodomo.com/viewtopic.php?f=202&t=16091" class="btn btn-outline-secondary btn-sm">Forum</a>
@@ -704,11 +732,11 @@
 </section>
 
 <section id="more_info">
-  <div class="sticky-top m-2 p-3 h4 pb-2 mb-4 text-primary border-bottom border-info bg-light">More Info</div>
+  <div class="sticky-div sticky-top m-2 p-3 h4 pb-2 mb-4 fs-4 border-bottom">More Info</div>
   <div class="accordion accordion-flush m-4" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
           Requesting Features and Reporting Bugs
         </button>
       </h2>
@@ -728,18 +756,17 @@
             </li>
           </ol>
           <p>
-            I will do my best to help you use the script(s), but I can only commit to providing support for the
-            scripts themselves; I can't commit to providing support for difficulties accessing third-party
-            resources, the accuracy of your data or other concerns external to the plugin. In these cases, you
-            should post questions to the forum as other users may be able to help and others can benefit from any
-            answers provided.
+            I will do my best to help you use my scripts and plugins, but I can't commit to providing support for
+            difficulties accessing third-party resources, the accuracy of your data or other concerns external to the
+            scripts and plugins. In these cases, you should post questions to the forum as other users may be able to
+            help and others can benefit from any answers provided.
           </p>
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
           License
         </button>
       </h2>
@@ -765,7 +792,7 @@
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="accordion-button collapsed fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
           About this page...
         </button>
       </h2>
@@ -773,8 +800,8 @@
         <div class="accordion-body">
           <p>
             This page was constructed using a combination of HTML, Bootstrap and JavaScript. Feel free to use it as one
-            way to learn about how these different tools work together. Uncopyrighted <span id="foo"></span>.
-
+            way to learn about how these different tools work together.
+            <br><br>Uncopyrighted <span id="foo"></span>.
           </p>
         </div>
       </div>
@@ -784,12 +811,12 @@
 
 <section id="modals">
   <!--Animated GIF Image-->
-  <div class="modal fade" id="animated_gif_image" tabindex="-1" aria-labelledby="animatedGifLabel" aria-hidden="true">
+  <div class="modal fade" id="animated_gif_image" tabindex="-1">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="animatedGifLabel">Animated GIF Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="animatedGifLabel">Animated GIF Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_bar_animation.gif" alt="Animated GIF Image" style="max-width: 100%;">
@@ -799,12 +826,12 @@
   </div>
 
   <!--Battery Image-->
-  <div class="modal fade" id="battery_image" tabindex="-1" aria-labelledby="calendarLabel" aria-hidden="true">
+  <div class="modal fade" id="battery_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="batteryLabel">Battery Level Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="batteryLabel">Battery Level Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_battery_test.png" alt="Battery Image" style="max-width: 100%;">
@@ -814,12 +841,12 @@
   </div>
 
   <!--Calendar Image-->
-  <div class="modal fade" id="calendar_image" tabindex="-1" aria-labelledby="calendarLabel" aria-hidden="true">
+  <div class="modal fade" id="calendar_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="calendarLabel">Calendar Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="calendarLabel">Calendar Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_calendar.png" alt="Calendar Image" style="background-color: white; max-width: 100%;">
@@ -829,12 +856,12 @@
   </div>
 
   <!--Gephi Image-->
-  <div class="modal fade" id="gephi_image" tabindex="-1" aria-labelledby="GephiLabel" aria-hidden="true">
+  <div class="modal fade" id="gephi_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="gephiLabel">Gephi Network Mesh Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="gephiLabel">Gephi Network Mesh Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_gephi.png" alt="Gephi Network Mesh Image" style="max-width: 100%;">
@@ -844,12 +871,12 @@
   </div>
 
   <!--Gnuplot Image-->
-  <div class="modal fade" id="gnuplot_image" tabindex="-1" aria-labelledby="GnuplotLabel" aria-hidden="true">
+  <div class="modal fade" id="gnuplot_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="gnuplotLabel">Gnuplot Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="gnuplotLabel">Gnuplot Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_gnuplot.png" alt="Gnuplot Image" style="max-width: 100%;">
@@ -859,12 +886,12 @@
   </div>
 
   <!--Wind Direction Image-->
-  <div class="modal fade" id="wind_direction_image" tabindex="-1" aria-labelledby="windDirectionLabel" aria-hidden="true">
+  <div class="modal fade" id="wind_direction_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="windDirectionLabel">Wind Direction Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="windDirectionLabel">Wind Direction Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_wind_direction.png" alt="Wind Direction Image" style="max-width: 100%;">
@@ -874,12 +901,12 @@
   </div>
 
   <!--WUnderground Gauge Pack Image-->
-  <div class="modal fade" id="gauge_pack_image" tabindex="-1" aria-labelledby="WundergroundGaugePackLabel" aria-hidden="true">
+  <div class="modal fade" id="gauge_pack_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="gaugePackLabel">WUnderground Gauge Pack Images</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="gaugePackLabel">WUnderground Gauge Pack Images</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <div><img src="img/img_gauge_pack_1.png" alt="WUnderground Gauge Pack Image 1" style="max-width: 100%;"></div>
@@ -890,12 +917,12 @@
   </div>
 
   <!--ZWave Node Matrix Image-->
-  <div class="modal fade" id="zwave_node_image" tabindex="-1" aria-labelledby="zwaveModalLabel" aria-hidden="true">
+  <div class="modal fade" id="zwave_node_image" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header" data-bs-theme="dark">
-          <h1 class="modal-title fs-5" id="zwaveModalLabel">Matrix Image</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h1 class="modal-title fs-6" id="zwaveModalLabel">Matrix Image</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <img src="img/img_node_matrix.png" alt="ZWave Node Matrix Image" style="max-width: 100%;">
@@ -905,5 +932,22 @@
   </div>
 </section>
 
+<script>
+        // JavaScript to handle theme toggle
+      const toggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      toggleButton.addEventListener('click', () => {
+        // Toggle between light and dark themes
+        if (body.getAttribute('data-bs-theme') === 'light') {
+          body.setAttribute('data-bs-theme', 'dark');
+          toggleButton.textContent = 'Switch to Light Theme';
+        } else {
+          body.setAttribute('data-bs-theme', 'light');
+          toggleButton.textContent = 'Switch to Dark Theme';
+        }
+      });
+
+</script>
 </body>
 </html>
