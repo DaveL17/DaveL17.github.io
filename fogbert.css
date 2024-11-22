@@ -56,7 +56,7 @@ body {
 }
 
 .sticky-div {
-    width: 95%;
+    width: 98%;
 }
 
 @media (min-width: 1100px) {
@@ -67,13 +67,13 @@ body {
 
 /* Base for light and dark themes */
 body[data-bs-theme="light"] {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #212529;
 }
 
 body[data-bs-theme="dark"] {
-    background-color: #343a40;
-    color: #f8f9fa;
+    background-color: #343A40;
+    color: #F8F9FA;
 }
 
 h1, p {
@@ -81,13 +81,13 @@ h1, p {
 }
 
 body[data-bs-theme="light"] .sticky-div {
-    background-color: #f8f9fa;
-    border: #343a40;
+    background-color: #F8F9FA;
+    border: #343A40;
 }
 
 body[data-bs-theme="dark"] .sticky-div {
-    background-color: #343a40;
-    border: #f8f9fa;
+    background-color: #343A40;
+    border: #F8F9FA;
 }
 
 /* override checkbox checked attributes */
