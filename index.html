@@ -14,11 +14,11 @@
       // Get the current year for footer
       window.onload = function () {
           const year = new Date().getFullYear()
-          document.getElementById('year').innerHTML = year.toString();
+          document.getElementById('foo').innerHTML = year.toString();
       };
   </script>
 </head>
-<div style="position: absolute; right: 5px;">
+<div class="theme-control">
   <table>
     <tr>
       <td class="fs-6 text-light">dark&nbsp;&nbsp;</td>
@@ -31,7 +31,7 @@
   </table>
 </div>
 <header class="banner">
-  <p class="p-5 pb-2 mb-4 text-light">Dave's Plugins and Scripts for Indigo</p>
+  <p class="p-5 pb-2 mb-4 text-light text-end">Dave's Plugins and Scripts for Indigo</p>
 </header>
 
 <body data-bs-theme="dark">
@@ -803,7 +803,7 @@
           <p>
             This page was constructed using a combination of HTML, Bootstrap and JavaScript. Feel free to use it as one
             way to learn about how these different tools work together.
-            <br><br>Uncopyrighted <span id="year"></span>.
+            <br><br>Uncopyrighted <span id="foo"></span>.
           </p>
         </div>
       </div>
@@ -851,7 +851,7 @@
           <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <img class="modal-img" src="img/img_calendar.png" alt="Calendar Image" style="background-color: white;">
+          <img class="modal-img" src="img/img_calendar.png" alt="Calendar Image">
         </div>
       </div>
     </div>
