@@ -2,23 +2,6 @@ html, body {
     color: #000000;
 }
 
-.accordion-body {
-    font-size: 10pt;
-}
-
-.banner {
-    background-color: #000000;
-    background-image: url('./img/img_pankaj-patel-_SgRNwAVNKw-unsplash.jpg');
-    font-size: 32pt;
-    height: 150px;
-}
-
-/* bootstrap icons*/
-.bi {
-    float: left;
-    font-size: 32pt;
-}
-
 /* Base for light and dark themes */
 body[data-bs-theme="light"] {
     background-color: #FFFFFF;
@@ -40,6 +23,26 @@ body[data-bs-theme="dark"] .sticky-div {
     border: #F8F9FA;
 }
 
+h1, p {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.accordion-body {
+    font-size: 10pt;
+}
+
+.banner {
+    background-color: #000000;
+    background-image: url('./img/img_pankaj-patel-_SgRNwAVNKw-unsplash.jpg');
+    height: 130px;
+}
+
+/* bootstrap icons */
+.bi {
+    float: left;
+    font-size: 32pt;
+}
+
 .card-text {
     font-size: 11pt;
 }
@@ -56,10 +59,6 @@ body[data-bs-theme="dark"] .sticky-div {
 .custom-control-input:checked {
     background-color: rgb(33, 37, 41) !important;
     border-color: rgb(73, 80, 87) !important;
-}
-
-h1, p {
-    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .modal-content {
@@ -95,4 +94,31 @@ h1, p {
     position: absolute;
     right: 5px;
     z-index: 1;
+}
+
+/* TODO: these might not be the best breakpoints, but they do work. */
+@media (min-width: 1201px) {
+  header {
+    font-size: 24pt;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    font-size: 20pt;
+  }
+}
+
+/* Font size for small screens (mobile devices, etc.) */
+@media (max-width: 992px) {
+  header {
+    font-size: 18pt;
+  }
+}
+
+/* Font size for very small screens (e.g., small phones) */
+@media (max-width: 768px) {
+  header {
+    font-size: 16pt;
+  }
 }
