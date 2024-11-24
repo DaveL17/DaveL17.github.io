@@ -43,6 +43,13 @@ h1, p {
     font-size: 32pt;
 }
 
+.card {
+    min-height: 275px;
+}
+
+.card.info {
+    min-height: 210px;
+}
 .card-text {
     font-size: 11pt;
 }
