@@ -1,3 +1,9 @@
+:root {
+    --background-dark: #000000;
+    --background-light: #FFFFFF;
+    --base-font: 11pt;
+}
+
 html, body {
     color: #000000;
 }
@@ -32,7 +38,7 @@ h1, p {
 }
 
 .banner {
-    background-color: #000000;
+    background-color: var(--background-light);
     background-image: url('./img/img_pankaj-patel-_SgRNwAVNKw-unsplash.jpg');
     height: 130px;
 }
@@ -51,7 +57,7 @@ h1, p {
     min-height: 210px;
 }
 .card-text {
-    font-size: 11pt;
+    font-size: var(--base-font);
 }
 
 .card-footer {
@@ -59,17 +65,11 @@ h1, p {
 }
 
 .card-subtitle {
-    font-size: 11pt;
-}
-
-/* override checkbox checked attributes */
-.custom-control-input:checked {
-    background-color: rgb(33, 37, 41) !important;
-    border-color: rgb(73, 80, 87) !important;
+    font-size: var(--base-font);
 }
 
 .modal-content {
-    background-color: #000000;
+    background-color: var(--background-dark);
 }
 
 .modal-body {
@@ -78,7 +78,7 @@ h1, p {
 }
 
 .modal-img {
-    background-color: white;
+    background-color: var(--background-light);
     max-width: 100%;
 }
 
